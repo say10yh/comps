@@ -1,0 +1,21 @@
+<div (click)="onCloseButton()" class="ui dimmer visible active"> 
+    <div (click)="$event.stopPropagation()" class="ui modal visible active">
+        <i (click)="onCloseButton()" class="close icon"></i>
+        <div class="header">
+            <ng-content select="[modalTitle]"></ng-content>
+        </div>
+        <div class="content">
+            <p>
+                <ng-content></ng-content>
+            </p>
+        </div>
+        <div class="actions">
+            <button (click)="onCloseButton()" class="ui button">OK</button>
+        </div>
+    </div>
+</div>
+        
+        
+        
+        
+        

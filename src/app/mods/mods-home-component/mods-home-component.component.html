@@ -1,0 +1,8 @@
+<app-divider>Modal component</app-divider>
+<button (click)="onClick()">Show modal</button>
+<app-modal (close)="onClick()" *ngIf="showModal">
+    <div modalTitle>custom header</div>
+    custom reusable component
+</app-modal>
+<app-divider>Accordion</app-divider>
+<app-accordion [items]="items"></app-accordion>
